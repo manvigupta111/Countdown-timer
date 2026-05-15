@@ -1,16 +1,74 @@
-# React + Vite
+# ⏳ Countdown Timer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React countdown timer application where users can enter hours, minutes, and seconds, then start, pause, and reset the timer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+⏱️ Start and pause countdown timer  
+🔄 Reset timer instantly  
+⌨️ User-controlled time inputs  
+⚛️ Built with React Hooks  
+🧠 Real-time countdown logic  
+🎨 Clean and minimal UI  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript (ES6+)
+- CSS
+- React Hooks (`useState`, `useEffect`, `useRef`)
+
+---
+
+## 📸 Functionality
+
+### ✅ Set Custom Time
+
+Users can enter:
+
+```txt
+HH : MM : SS
+```
+
+Example:
+
+```txt
+01 : 30 : 45
+```
+
+---
+
+### ✅ Timer Controls
+
+- ▶️ Start Timer
+- ⏸️ Pause Timer
+- 🔄 Reset Timer
+
+---
+
+### ✅ Countdown Logic
+
+The app automatically:
+- decreases seconds
+- handles minute rollover
+- handles hour rollover
+- stops at `00 : 00 : 00`
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+ ├── App.js
+ ├── App.css
+ └── main.js
+```
+
+---
+
+<img width="761" height="569" alt="Screenshot 2026-05-15 at 12 48 41 PM" src="https://github.com/user-attachments/assets/c9ec7b88-1180-4e1a-88da-4db937b1343a" />
